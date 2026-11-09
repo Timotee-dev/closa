@@ -1,0 +1,36 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Closa: replies to your customers so you don't lose the sale{% endblock %}</title>
+  <meta name="description" content="Closa answers your customers on WhatsApp, Instagram, TikTok and your website, sends them a payment link and follows up. Join the waitlist.">
+  <meta property="og:title" content="Closa">
+  <meta property="og:description" content="Stop losing customers in your DMs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231B1A17'/><text x='50%' y='62%' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='44' fill='%23F4EFE6'>c</text></svg>">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a href="/" class="wordmark">closa</a>
+      <a href="/#join" class="top-link">Join the waitlist →</a>
+    </div>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span class="wordmark small">closa</span>
+      <span>Made in Nigeria by Nexora.</span>
+      {% if contact_whatsapp %}<a href="https://wa.me/{{ contact_whatsapp }}" target="_blank" rel="noopener">Talk to me on WhatsApp</a>{% endif %}
+      <span>© {% now "Y" %}</span>
+    </div>
+  </footer>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "waitlist/base.html" %}
+{% block title %}You're on the list | Closa{% endblock %}
+{% block content %}
+<main class="thanks">
+  <div class="wrap narrow">
+    <h1>You're on the list, {{ signup.name|default:"friend" }}.</h1>
+    <p class="intro">Thanks for signing up {{ signup.business_name }}. I'll reach out when your spot opens.</p>
+
+    <div class="spot">
+      <span class="spot-label">Your spot</span>
+      <span class="spot-num">#{{ signup.position }}</span>
+      {% if signup.in_early_access %}
+        <p>You're in the first {{ early_spots }}, so you get half price for as long as you stay.</p>
+      {% else %}
+        <p>The first {{ early_spots }} get half price. Every business you refer moves you up {{ boost }} spots.</p>
+      {% endif %}
+      {% if signup.referral_count %}<p class="small">You've referred {{ signup.referral_count }} so far.</p>{% endif %}
+    </div>
+
+    <h2>Know another business owner who'd want this?</h2>
+    <p>Send them your link. Each one who joins moves you up {{ boost }} spots.</p>
+    <div class="share">
+      <input id="share-url" value="{{ share_url }}" readonly>
+      <button class="button" data-copy="#share-url">Copy link</button>
+    </div>
+    <p class="share-links">
+      <a target="_blank" rel="noopener" href="https://wa.me/?text={{ "Have you seen this? It replies to your customers on WhatsApp and Instagram for you, even at night. Join the waitlist here: "|urlencode }}{{ share_url|urlencode }}">Send on WhatsApp</a>
+      <span>·</span>
+      <a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text={{ "Just joined the Closa waitlist. It replies to your customers on WhatsApp, Instagram and TikTok so you don't lose sales: "|urlencode }}&url={{ share_url|urlencode }}">Post on X</a>
+    </p>
+
+    {% if community_link %}<p><a class="button ghost" href="{{ community_link }}" target="_blank" rel="noopener">Join the WhatsApp group for early members</a></p>{% endif %}
+    {% if contact_whatsapp %}<p class="small">Any questions? <a href="https://wa.me/{{ contact_whatsapp }}" target="_blank" rel="noopener">Message me on WhatsApp.</a></p>{% endif %}
+    <p class="sign">Timothy</p>
+  </div>
+</main>
+{% endblock %}

@@ -1,0 +1,164 @@
+{% extends "waitlist/base.html" %}
+{% block content %}
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Stop losing customers in your <em>DMs.</em></h1>
+        <p class="intro">Closa replies to your customers on WhatsApp, Instagram, TikTok and your website the moment they message. It answers their questions from your price list, sends a payment link, and follows up with the ones who go quiet.</p>
+        <p class="intro">You sleep. It sells.</p>
+        <a href="#join" class="button">Join the waitlist</a>
+        <p class="note">Free to join. The first {{ early_spots }} businesses get half price, for good.</p>
+      </div>
+
+      <div class="screenshot-wrap">
+        <div class="wa">
+          <div class="wa-head">
+            <span class="wa-back">‹</span>
+            <span class="wa-pic">AF</span>
+            <div><strong>Ada's Fabrics</strong><small>online</small></div>
+          </div>
+          <div class="wa-body">
+            <span class="wa-day">TODAY</span>
+            <p class="b them">Good evening. Do you still have the ankara two-piece in size 12?<time>2:13 AM</time></p>
+            <p class="b me">Good evening! Yes we do, the blue and the wine one. It's ₦18,500. Want me to show you both?<time>2:13 AM <i>✓✓</i></time></p>
+            <p class="b them">The wine one. Can you deliver to Ikeja?<time>2:15 AM</time></p>
+            <p class="b me">Yes, ₦2,500 to Ikeja and it gets to you tomorrow. Total is ₦21,000. Here's your payment link:<br><u>paystack.com/pay/adasfabrics</u><time>2:15 AM <i>✓✓</i></time></p>
+            <p class="b them">Paid ✅<time>2:19 AM</time></p>
+          </div>
+        </div>
+        <div class="scribble">
+          <span>answered in 4 seconds.<br>Ada was asleep.</span>
+          <svg viewBox="0 0 120 80" aria-hidden="true"><path d="M110 8 C 80 6, 40 20, 22 62" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M14 50 L 21 64 L 34 56" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="familiar">
+    <div class="wrap">
+      <h2>Sound familiar?</h2>
+      <div class="pile">
+        <p class="bub r1">Price pls</p>
+        <p class="bub r2">Is this still available??</p>
+        <p class="bub r3">hello</p>
+        <p class="bub r4">How much is delivery to Abuja</p>
+        <p class="bub r5">Do you have it in black</p>
+        <p class="bub r6">hello?? 😑</p>
+        <p class="bub r7">Ok I'll get back to you</p>
+        <p class="bub r8">Never mind, I've bought it somewhere else</p>
+      </div>
+      <p class="familiar-text">Customers message at midnight, on four different apps, asking the same five questions. If you don't reply fast, they buy from whoever does. Closa makes sure that's you.</p>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="wrap two-col">
+      <h2>How it works</h2>
+      <ol class="numbered">
+        <li><b>Tell it about your business.</b> Paste your website or upload your price list and catalog. Add your rules: delivery fees, discounts you allow, when you're open.</li>
+        <li><b>Connect where you sell.</b> WhatsApp, Instagram, TikTok, Facebook, email and a chat box on your website. Takes a few minutes.</li>
+        <li><b>Let it reply.</b> It answers questions, sends payment links, books appointments and follows up. If it's not sure about something, it tells the customer you'll reply and pings you.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="what">
+    <div class="wrap two-col">
+      <h2>What you get</h2>
+      <ul class="plain">
+        <li><b>Replies in seconds,</b> any time of day.</li>
+        <li><b>Payment links</b> through Paystack or Stripe, right inside the chat.</li>
+        <li><b>Follow-ups</b> for people who asked and disappeared.</li>
+        <li><b>One inbox</b> for every app, so you can jump in whenever you want.</li>
+        <li><b>It only talks about your business.</b> No making up prices or promises.</li>
+        <li><b>English, Pidgin, French</b> and whatever tone fits your brand.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="letter-section">
+    <div class="wrap">
+      <div class="letter">
+        <p class="letter-label">Why I'm building this</p>
+        <p>Most small businesses I know don't have a sales problem. They have a replying problem. The customers are already in the DMs asking to buy, but the owner is one person running the shop, the deliveries and the Instagram page at the same time.</p>
+        <p>I'm building Closa so that every message gets a proper answer, even at 2am, without hiring anyone. I'm starting with a small group of businesses and setting each one up myself.</p>
+        <p>If that sounds useful, join the list. I read every signup.</p>
+        <p class="sign">Timothy</p>
+        <p class="sign-role">Founder, Closa</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="wrap two-col">
+      <div>
+        <h2>Pricing</h2>
+        <p class="side-note">One monthly price. The AI is included, no counting messages. Waitlist members pay half, for as long as they stay.</p>
+      </div>
+      <table class="prices">
+        <tr><th>Starter</th><td>2 apps, 500 conversations a month</td><td class="amt"><s>$29</s> $14.50<span>₦7,500</span></td></tr>
+        <tr><th>Growth</th><td>All apps, 2,000 conversations, payment links and follow-ups, 3 team members</td><td class="amt"><s>$79</s> $39.50<span>₦17,500</span></td></tr>
+        <tr><th>Pro</th><td>6,000 conversations, broadcasts, reports, 10 team members</td><td class="amt"><s>$199</s> $99.50<span>₦42,500</span></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="join" class="join">
+    <div class="wrap join-grid">
+      <div>
+        <h2>Get on the list</h2>
+        <p>I'm letting businesses in a few at a time. The first {{ early_spots }} get:</p>
+        <ul class="plain small-list">
+          <li>Half price for as long as you stay</li>
+          <li>Setup done for you, free</li>
+          <li>My personal number for anything you need</li>
+        </ul>
+        {% if total_signups > 9 %}<p class="count">{{ total_signups }} businesses have joined so far.</p>{% endif %}
+      </div>
+
+      <form method="post" action="/#join" class="form" novalidate>
+        {% csrf_token %}
+        {{ form.website }}
+        {% if form.non_field_errors %}<div class="errorlist">{{ form.non_field_errors }}</div>{% endif %}
+        <div class="row">
+          <label>Your name{{ form.name }}{{ form.name.errors }}</label>
+          <label>Business name{{ form.business_name }}{{ form.business_name.errors }}</label>
+        </div>
+        <label>Email{{ form.email }}{{ form.email.errors }}</label>
+        <div class="row">
+          <label>WhatsApp number <span class="opt">(optional)</span>{{ form.whatsapp }}{{ form.whatsapp.errors }}</label>
+          <label>Country{{ form.country }}{{ form.country.errors }}</label>
+        </div>
+        <div class="row">
+          <label>What do you sell?{{ form.business_type }}{{ form.business_type.errors }}</label>
+          <label>Messages a day{{ form.monthly_messages }}</label>
+        </div>
+        <fieldset>
+          <legend>Where do customers message you?</legend>
+          <div class="boxes">
+            {% for cb in form.platforms %}<label class="box">{{ cb.tag }} {{ cb.choice_label }}</label>{% endfor %}
+          </div>
+        </fieldset>
+        <label class="box wide">{{ form.willing_to_pay }} Hold the half-price offer for me. (You won't pay anything now.)</label>
+        <button type="submit" class="button full">Join the waitlist</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap two-col">
+      <h2>Questions people ask</h2>
+      <div>
+        <details><summary>What if it tells a customer something wrong?</summary><p>It only answers from what you give it. If a customer asks something it doesn't know, it says you'll get back to them and sends you a message. For the first week you can also approve replies before they go out.</p></details>
+        <details><summary>Do I need WhatsApp Business?</summary><p>Yes. We connect through Meta's official WhatsApp Business Platform, so your number stays safe. I'll help you set it up.</p></details>
+        <details><summary>Can I still reply myself?</summary><p>Any time. All your chats are in one place and you can take over a conversation with one tap.</p></details>
+        <details><summary>Who is it for?</summary><p>Anyone who sells through chat. Fashion, food, beauty, online stores, real estate, clinics, schools, services.</p></details>
+        <details><summary>When can I start using it?</summary><p>I'm onboarding the first businesses over the next few weeks, in the order they joined the list.</p></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}
